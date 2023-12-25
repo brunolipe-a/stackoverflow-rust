@@ -3,7 +3,7 @@ use serde::{Deserialize, Serialize};
 use uuid::Uuid;
 
 use crate::database::schema::answers;
-use crate::models::question::Question;
+use crate::question::models::Question;
 
 #[derive(
     Serialize, Deserialize, Queryable, Selectable, Identifiable, Associations, Debug, PartialEq,
